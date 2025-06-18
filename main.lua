@@ -98,7 +98,7 @@ atlas = 'colors',
 		return { vars = { card.ability.extra.dollars } }
 	end,
 	calculate = function(self, card, context)
-		if context.main_scoring then
+		if context.main_scoring and context.cardarea == G.play then
 			return {
                   dollars = ((G.GAME.dollars * card.ability.extra.dollars) - G.GAME.dollars)
       }
@@ -124,7 +124,7 @@ atlas = 'colors',
 		return { vars = { G.GAME.probabilities.normal } }
 	end,
 	calculate = function(self, card, context)
-		if context.main_scoring and (pseudorandom('colr_green') < G.GAME.probabilities.normal / card.ability.extra.odds) then
+		if context.main_scoring andcontext.cardarea == G.play and (pseudorandom('colr_green') < G.GAME.probabilities.normal / card.ability.extra.odds) then
 			local _card = create_playing_card ({
 				front = pseudorandom_element(G.P_CARDS, pseudoseed('colr_green')),
 				center = G.P_CENTERS.c_base
@@ -187,7 +187,7 @@ atlas = 'colors',
 	end,
 	calculate = function(self, card, context)
 		local card_to_seal = pseudorandom_element(G.hand.cards, 'random_purple')
-		if context.main_scoring then
+		if context.main_scoring and context.cardarea == G.play then
 			G.E_MANAGER:add_event(Event({
 				trigger = 'after',
 				delay = 0.4,
