@@ -1,6 +1,3 @@
-# ColorfulCards
-exactly what it sounds like, colors on cards!
+# ColorfulCards - Variant 2792
 
-any bugs/suggestions put them in the issues tab
-
-aiko add the mod to ur joker pls
+This is @Jimmy-B3's mod, except with a few touchups and an added Joker by request.
