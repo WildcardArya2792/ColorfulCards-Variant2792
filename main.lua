@@ -272,7 +272,7 @@ SMODS.Enhancement {
     loc_txt = {
         name = "Ivory",
         text = {
-            "If applied on a {C:spades}Spade{} or {C:clubs}Club{} card: {C:mult}+30 Chips{}",
+            "If applied on a {C:spades}Spade{} or {C:clubs}Club{} card: {C:chips}+30 Chips{}",
             "If applied on a {C:hearts}Heart{} or {C:diamonds}Diamond{} card: {X:chips,C:white}x3{} {C:chips}Chips{}"
         }
     },
@@ -734,3 +734,4 @@ SMODS.Booster{
     cost = 4,
     group_key = 'grouprandompaint'
 }
+
