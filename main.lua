@@ -1,4 +1,5 @@
 -- This is updated for 0711a using code from Wildcard Collection. 
+to_big = to_big or function(x) return x end -- Now you can play this WITHOUT Talisman!
 
 --the mod icon
 SMODS.Atlas{
@@ -734,5 +735,6 @@ SMODS.Booster{
     cost = 4,
     group_key = 'grouprandompaint'
 }
+
 
 
