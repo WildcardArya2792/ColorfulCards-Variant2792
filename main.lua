@@ -105,7 +105,7 @@ atlas = 'colors',
 	calculate = function(self, card, context)
 		if context.main_scoring and context.cardarea == G.play then
 			return {
-                  dollars = ((G.GAME.dollars * card.ability.extra.dollars) - G.GAME.dollars)
+                  dollars = lenient_bignum((G.GAME.dollars * card.ability.extra.dollars) - G.GAME.dollars)
       }
 		end
 	end
@@ -734,4 +734,5 @@ SMODS.Booster{
     cost = 4,
     group_key = 'grouprandompaint'
 }
+
 
